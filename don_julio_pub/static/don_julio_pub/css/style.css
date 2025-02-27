@@ -126,7 +126,7 @@ footer {
     }
 
     nav a {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         padding: 10px 15px;
     }
 
@@ -166,8 +166,8 @@ footer {
     }
 
     nav a {
-        font-size: 1rem;
-        padding: 8px 10px;
+        font-size: 1.5rem;
+        padding: 6px 8px;
     }
 
     #carouselExample {
