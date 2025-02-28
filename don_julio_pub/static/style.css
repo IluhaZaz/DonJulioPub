@@ -1,10 +1,3 @@
-@font-face {
-    font-family: 'Sunday';
-    src: url('{% static "don_julio_pub/fonts/Sunday-Regular.ttf" %}') format('opentype'); 
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
     background-color: #000;
     color: #fff;

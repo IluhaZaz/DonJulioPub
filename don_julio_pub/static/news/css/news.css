@@ -24,6 +24,13 @@
     align-items: start;
 }
 
+.news-item-no-img{
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
 .news-item .news-content {
     display: grid;
     grid-template-rows: auto 1fr;
@@ -87,4 +94,13 @@
     .news-content p {
         font-size: 1rem;
     }
+}
+
+.pagination{
+    margin: 0 auto;
+}
+
+.step-links > a{
+    color: #ff5252;
+    text-decoration: none;
 }
