@@ -1,8 +1,8 @@
 from django.urls import path
 
-from .views import index
+from .views import news_list
 
 
 urlpatterns = [
-    path("", index, name="news")
+    path("", news_list, name="news")
 ]
