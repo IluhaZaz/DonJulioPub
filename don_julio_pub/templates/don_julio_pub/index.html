@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дон Хулио</title>
-    <link rel="icon" href="source/logo.svg" type="image/svg+xml">
+    <link rel="icon" href="{% static 'don_julio_pub/images/logo.svg' %}" type="image/svg+xml">
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
@@ -17,11 +17,10 @@
 </head>
 <body>
     <header>
-        <span>Дон</span>
+        <span>Don</span>
         <img src="{% static 'don_julio_pub/images/logo.svg' %}" class = "main-logo" alt="Логотип бара">
-        <span>Хулио</span>
+        <span>Julio</span>
     </header>
-    
     <nav>
         <a href="{% url 'home' %}">Главная</a>
         <a href="{% url 'menu' %}">Меню</a>
@@ -30,7 +29,7 @@
     </nav>
 
     <section>
-        <h1>Крутая фраза</h1>
+        <h1>БАР ВРЕДНЫХ ПРИВЫЧЕК</h1>
     </section>
     
 
