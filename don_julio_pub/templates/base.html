@@ -23,6 +23,7 @@
 
     <link type="text/css" rel="stylesheet" href="{% static 'style.css' %}">
     {% block head_extra %}{% endblock %}
+    
 
 </head>
 <body>
@@ -35,7 +36,6 @@
         <a href="{% url 'home' %}">Главная</a>
         <a href="{% url 'menu' %}">Меню</a>
         <a href="{% url 'news' %}">Новости</a>
-        <a href="{% url 'contacts' %}">Контакты</a>
     </nav>
 
     {% block content %}
@@ -43,7 +43,21 @@
     {% endblock %}
     
     <footer>
-        &copy; 2025 Дон Хулио. Все права защищены и принадлежат не нам)).
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Контакты</h2>
+                <p>Телефон: <a href="tel:+79297076116">+7 (929) 707-61-16</a></p>
+                <p>Адрес: <a href="https://yandex.ru/maps/org/don_khulio/202683929893" target="_blank">Самара, Московское ш. 49</a></p>
+                <p>Мы в соцсетях: <a href="https://vk.com/donjuliopub" target="_blank">ВКонтакте</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>Время работы</h2>
+                <p>Понедельник - Четверг: 18:00 - 02:00</p>
+                <p>Пятница - Суббота: 18:00 - 04:00</p>
+                <p>Воскресенье: 18:00 - 02:00</p>
+            </div>
+        </div>
+        <p class="footer-rights">&copy; 2025 Дон Хулио. Все права защищены и принадлежат не нам.</p>
     </footer>
 </body>
 </html>
