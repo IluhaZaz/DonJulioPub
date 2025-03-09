@@ -64,7 +64,7 @@
                     </button>
                 </div>
                 <div class="modal-body p-0">
-                    <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+                    <div id="imageCarousel" class="carousel slide">
                         <div class="carousel-inner" id="carouselItems">
                         </div>
                         <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
@@ -93,7 +93,6 @@
             var carouselItems = document.getElementById('carouselItems');
             carouselItems.innerHTML = ''; 
 
-
             images.forEach(function(image, index) {
                 var isActive = index === currentIndex ? 'active' : '';
                 var item = `
@@ -104,9 +103,15 @@
                 carouselItems.innerHTML += item;
             });
 
-
             $('#imageModal').modal('show');
         }
+
+        // Инициализация карусели без автопрокрутки
+        $(document).ready(function() {
+            $('#imageCarousel').carousel({
+                interval: false  // Отключение автопрокрутки
+            });
+        });
     </script>
 
 {% endblock %}
