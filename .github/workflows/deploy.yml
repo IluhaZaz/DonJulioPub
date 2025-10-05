@@ -27,6 +27,7 @@ jobs:
       run: |
         eval "$(ssh-agent -s)"
         touch ~/.ssh/github_actions
+        chmod 600 ~/.ssh/github_actions
         cat << 'EOF' > ~/.ssh/github_actions
         ${{ secrets.SSH_PRIVATE_KEY }}
         EOF
