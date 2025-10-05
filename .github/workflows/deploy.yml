@@ -27,7 +27,9 @@ jobs:
       run: |
         eval "$(ssh-agent -s)"
         touch ~/.ssh/github_actions
-        echo ${{ secrets.SSH_PRIVATE_KEY }} > ~/.ssh/github_actions
+        cat << 'EOF' > ~/.ssh/github_actions
+        ${{ secrets.SSH_PRIVATE_KEY }}
+        EOF
         ssh-add ~/.ssh/github_actions
         ssh -v -p ${{ secrets.SERVER_PORT }} -o BatchMode=yes ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "
           
