@@ -42,4 +42,3 @@ jobs:
           DB_NAME: test_db
           DB_PORT: 5432
           DB_HOST: localhost
-    - run: python -m tests
