@@ -25,10 +25,10 @@ jobs:
     - run: pip install -r requirements.txt
     - run: python don_julio_pub/manage.py migrate
       env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
-          POSTGRES_DB: test_db
-          PORT: 5432
-          HOST: localhost
+          DB_USER: postgres
+          DB_PASS: postgres
+          DB_NAME: test_db
+          DB_PORT: 5432
+          DB_HOST: localhost
     - run: python don_julio_pub/manage.py runserver 0.0.0.0:8181
     - run: python -m tests
