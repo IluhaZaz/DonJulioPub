@@ -1,7 +1,7 @@
 import requests
 
 
-resp = requests.get("http://app.zazvonov.course.prafdin.ru/ping/")
+resp = requests.get("http://0.0.0.0:8181/ping/")
 
 assert resp.text == '<html>\n    status: ok\n</html>'
 
