@@ -29,7 +29,6 @@ jobs:
     - name: Deploy to server
       run: |
         ssh -p ${{ secrets.SERVER_PORT }} -o BatchMode=yes ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "
-          cd /path/to/your/project || exit 1
           
           echo 'Storing current branch for rollback if needed'
           CURRENT_BRANCH=\$(git branch --show-current)
