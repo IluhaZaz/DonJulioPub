@@ -71,9 +71,9 @@ jobs:
           
           # Check if service is running
           if systemctl is-active --quiet donjulio; then
-            echo '✅ Service is running successfully'
+            echo 'Service is running successfully'
           else
-            echo '❌ Service failed to start'
+            echo 'Service failed to start'
             exit 1
           fi
         "
