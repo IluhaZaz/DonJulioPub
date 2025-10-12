@@ -49,5 +49,5 @@ jobs:
     - uses: actions/checkout@v4
     - run: echo "${{ secrets.PAT }}" | docker login ghcr.io -u IluhaZaz --password-stdin
     - run: docker compose build web
-    - run: docker tag donjuliopub-web:latest ghcr.io/ilyhazaz/devops:latest 
+    - run: docker tag donjuliopub-web:latest ghcr.io/iluhazaz/devops:latest 
     - run: docker push ghcr.io/iluhazaz/devops:latest   
